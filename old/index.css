@@ -1,0 +1,371 @@
+
+/****** FONTS ******/
+@font-face {
+    font-family: "Ubuntu-Medium";
+    src: url("../elements/fonts/Ubuntu-M.ttf");
+}
+@font-face {
+    font-family: "Ubuntu-Bold";
+    src: url("../elements/fonts/Ubuntu-B.ttf");
+}
+@font-face {
+    font-family: "Ubuntu-Light";
+    src: url("../elements/fonts/Ubuntu-L.ttf");
+}
+@font-face {
+    font-family: "Ubuntu-Regular";
+    src: url("../elements/fonts/Ubuntu-R.ttf");
+}
+
+/****** BACKGROUND ******/
+.section{
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#pg1{
+    background-image: url(elements/images/backgrounds/1.png);
+    background-position: right;
+    height: 70vh;
+    width: auto;
+}
+#pg2{
+    background-image: url(elements/images/backgrounds/2.png);
+    background-position: center;
+    height: 50vh;
+    width: auto;
+}
+#pg3{
+    background-image: url(elements/images/backgrounds/3.png);
+    background-position: left;
+    height: 50vh;
+    width: auto;
+}
+#pg4{
+    background-image: url(elements/images/backgrounds/4.png);
+    background-position: bottom;
+    height: 50vh;
+    width: auto;
+}
+
+/****** MENU ******/
+.bar {
+    position: absolute;
+    right: 0px;
+    border-left: 5vw solid hsla(0, 0%, 0%, 0.75);
+    height: 100vh;
+    z-index: 10;
+}
+
+.logo {
+    position: absolute;
+    right: 1.5vw;
+    top: 3vh;
+    width: 2vw;
+    height: auto;
+    z-index: 20;
+}
+
+#myMenu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 1.5vmax;
+    top: 50vh;
+    height: auto;
+    transform: translate(0, -5.5vw);
+    z-index: 30;
+}
+
+.homeImg {
+    width: 2vmax;
+    height: auto;
+    margin-bottom: 1vw;
+    z-index: 40;
+}
+li.active a.hi {
+    content: url(elements/images/menu/home_active.png);
+    width: 2vmax;
+    height: auto;
+    margin-bottom: 1vw;
+    z-index: 40;
+}
+
+.aboutImg {
+    width: 2vmax;
+    height: auto;
+    margin-bottom: 1vw;
+    z-index: 40;
+}
+li.active a.ai {
+    content: url(elements/images/menu/about_active.png);
+    width: 2vmax;
+    height: auto;
+    margin-bottom: 1vw;
+    z-index: 40;
+}
+
+.projectsImg {
+    width: 2vmax;
+    height: auto;
+    margin-bottom: 1vw;
+    z-index: 40;
+}
+li.active a.pi {
+    content: url(elements/images/menu/projects_active.png);
+    width: 2vmax;
+    height: auto;
+    margin-bottom: 1vw;
+    z-index: 40;
+}
+
+.contactImg {
+    width: 2vmax;
+    height: auto;
+    margin-bottom: 1vw;
+    z-index: 40;
+}
+li.active a.ci {
+    content: url(elements/images/menu/contact_active.png);
+    width: 2vmax;
+    height: auto;
+    margin-bottom: 1vw;
+    z-index: 40;
+}
+
+ul{
+    list-style-type: none;
+}
+
+@media screen and (max-width: 1024px) {
+    .bar {
+        border-left: 0;
+        top: 0;
+        left: 0px;
+        height: 0;
+        border-bottom: 7vh solid hsla(0, 0%, 0%, 0.75);
+        width: 100vw;
+        z-index: 10;
+    }
+
+    .logo {
+        position: absolute;
+        left: 5vw;
+        top: 2vh;
+        height: 3vh;
+        width: auto;
+        z-index: 20;
+    }
+
+    #myMenu {
+        display: none;
+    }
+}
+
+/****** HOME ******/
+.itsme {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    left: 10vw;
+    width: 100vw;
+    height: 100vh;
+    color: white;
+    justify-content: center;
+}
+
+.name {
+    margin: 0;
+    font-family: 'Ubuntu-Bold';
+    font-size: 4vmax;
+}
+
+.description {
+    margin: 0;
+    font-family: 'Ubuntu-Light';
+    font-size: 1.3vmax;
+}
+
+.social-medias {
+    margin-top: 4vh; 
+}
+
+.imgSocial {
+    margin-right: 1.5vmax; 
+    width: 3vmax;
+    height: auto;
+}
+.imgSocial:hover {
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+
+@media screen and (max-width: 1024px) {
+    .name {
+        font-size: 5vmax;
+    }
+    
+    .description {
+        margin: 0;
+        font-family: 'Ubuntu-Light';
+        font-size: 2vmax;
+    }
+    
+    .imgSocial {
+        margin-right: 2vmax; 
+        width: 3.5vmax;
+        height: auto;
+    }
+}
+
+/****** ABOUT ******/
+.aboutBlock {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+.aboutme {
+    font-family: 'Ubuntu-Light';
+    font-size: 1.8vmax;
+    color: white;
+    width: 35%;
+    height: auto;
+}
+
+.imgAbout {
+    height: 30vmax;
+    width: 32vmax;
+    margin-left: 5vw;
+    z-index: 10;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .aboutBlock {
+        flex-direction: column;
+    }
+
+    .aboutme {
+        font-family: 'Ubuntu-Light';
+        font-size: 2vmax;
+        color: white;
+        width: 70%;
+        height: auto;
+        text-align: center;
+    }
+
+    .imgAbout {
+        margin-left: 0;
+        margin-top: 5vh;
+        height: 35vmax;
+        width: 37vmax;
+        z-index: 10;
+    }
+}
+/****** PORTFOLIO ******/
+.grid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell {
+    background-color: transparent;
+    justify-content: center;
+}
+
+.job {
+    width: 15vmax;
+    height: 15vmax;
+    border-radius: 100%;
+    margin: 2vw;
+    margin-bottom: 0;
+}
+
+.legend{
+    font-family: 'Ubuntu-Medium';
+    color: white;
+    text-align: center;
+    font-size: 1.3vmax;
+}
+
+@media screen and (max-width: 1024px) {
+    .grid {
+        flex-direction: column;
+    }
+
+    .job {
+        width: 20vmax;
+        height: 20vmax;
+        margin-top: 2vh;
+    }
+
+    .legend{
+        font-family: 'Ubuntu-Medium';
+        color: white;
+        text-align: center;
+        font-size: 2vmax;
+    }
+    
+}
+
+/****** CONTACT ******/
+.contactSection {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgSocialContact {
+    margin: 1.5vmax; 
+    width: 3vmax;
+    height: auto;
+}
+.imgSocialContact:hover {
+    -moz-transform: scale(1.5);
+    -webkit-transform: scale(1.5);
+    -o-transform: scale(1.5);
+}
+
+span {
+    width: 30%;
+    border-bottom: 0.1vmax solid white;
+    margin-top: 2vh;
+}
+
+.emails {
+    font-family: 'Ubuntu-Light';
+    color: white;
+    text-align: center;
+    font-size: 1.5vmax;
+}
+
+@media screen and (max-width: 1024px) {
+    .imgSocialContact {
+        margin: 1.5vmax; 
+        width: 5vmax;
+        height: auto;
+    }
+}

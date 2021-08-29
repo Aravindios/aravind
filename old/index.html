@@ -1,0 +1,101 @@
+<!doctype html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="icon" href="../elements/images/logo.png">
+
+    <title>Izabella Melo</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.0.4/fullpage.extensions.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+  
+<body style="background-color: #080039; margin: 0;">
+    <!-- MENU BAR -->
+    <div class="bar">
+        <img class="logo" src="elements/images/logo.png">
+        <ul id="myMenu">
+            <li data-menuanchor="home">
+                <a class="hi" href="#home">
+                    <img class="homeImg" src="elements/images/menu/home.png">
+                </a>
+            </li>
+            <li data-menuanchor="about">
+                <a class="ai" href="#about">
+                    <img class="aboutImg" src="elements/images/menu/about.png">
+                </a>
+            </li>
+            <li data-menuanchor="portfolio">
+                <a class="pi" href="#portfolio">
+                    <img class="projectsImg" src="elements/images/menu/projects.png">
+                </a>
+            </li>
+            <li data-menuanchor="contact">
+                <a class="ci" href="#contact">
+                    <img class="contactImg" src="elements/images/menu/contact.png">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- SECTIONS -->
+    <main id="fullpage">
+        <!-- HOME -->
+        <section class="section" id="pg1" data-anchor="home">
+            <div class="itsme">
+                <h1 class="name">Eu sou<br>Izabella Melo</h1>
+                <p class="description">Estudante de Engenharia da Computação<br>& Desenvolvedora IOS</p>
+
+                <div class="social-medias">
+                    <a href="https://www.facebook.com/IzabellaCMelo" target="_blank"><img class="imgSocial" src="elements/images/icons/facebook.png"></a>
+                    <a href="https://github.com/izmcm" target="_blank"><img class="imgSocial" src="elements/images/icons/git.png"></a>
+                    <a href="https://www.linkedin.com/in/cmeloizabella" target="_blank"><img class="imgSocial" src="elements/images/icons/linkedin.png"></a>
+                    <a href="https://www.instagram.com/izabellacmelo/" target="_blank"><img class="imgSocial" src="elements/images/icons/insta.png"></a>
+                </div>
+            </div>
+        </section>
+        <!-- ABOUT -->
+        <section class="section" id="pg2" data-anchor="about">
+            <div class="aboutBlock">
+                <p class='aboutme'>Brasileira, recifense, estudante de Engenharia da Computação na UFPE e desenvolvedora IOS 
+                        no projeto de extensão Apple Developer Academy.<br><br>Desde criança tentando entender como o mundo funciona.<br><br>
+                        Apaixonada por desafios e novas experiências, principalmente as que tornam o mundo um lugar melhor porque 
+                        acredita num futuro com mais justiça (e com mais mulheres na área de computação).
+                </p>
+                <img class="imgAbout" src="elements/images/imgabout.png">
+            </div>
+        </section>
+        <!-- PORTIFOLIO -->
+        <section class="section" id="pg3" data-anchor="portfolio">
+                <div class="grid">
+                    <a class="cell" href="https://itunes.apple.com/br/app/amazing-maze/id1436962637?mt=8" target="_blank">
+                        <img class="job" alt="amazing maze" src="elements/images/projects/amazingmaze.png">
+                        <p class="legend">AmazingMaze!<br>jogo para IOS</p>
+                    </a>
+                    <a class="cell" href="https://itunes.apple.com/br/app/vie-daily-priorities/id1441313195?l=en&mt=8" target="_blank">
+                        <img class="job" alt="vie" src="elements/images/projects/vie.png">
+                        <p class="legend">Vie - Daily Priorities<br>app para IOS</p>
+                    </a>
+                    <a class="cell" href="https://apps.apple.com/br/app/gnome-rush/id1462087349" target="_blank">
+                        <img class="job" alt="gnome rush" src="elements/images/projects/gnomerush.png">
+                        <p class="legend">Gnome Rush<br>jogo para IOS</p>
+                    </a>
+                </div>
+        </section>
+        <!-- CONTACT -->
+        <section class="section" id="pg4" data-anchor="contact">
+            <div class="contactSection">
+                    <div class="social-medias">
+                        <a href="https://www.facebook.com/IzabellaCMelo" target="_blank"><img class="imgSocialContact" src="elements/images/icons/facebook.png"></a>
+                        <a href="https://github.com/izmcm" target="_blank"><img class="imgSocialContact" src="elements/images/icons/git.png"></a>
+                        <a href="https://www.linkedin.com/in/cmeloizabella" target="_blank"><img class="imgSocialContact" src="elements/images/icons/linkedin.png"></a>
+                        <a href="https://www.instagram.com/izabellacmelo/" target="_blank"><img class="imgSocialContact" src="elements/images/icons/insta.png"></a>
+                    </div>
+                    <span></span>
+                    <p class="emails">Para e-mails:<br><br><br><b>cmeloizabella@gmail.com</b><br><br><b>imcm@cin.ufpe.br</b></p>
+            </div>
+        </section>
+    </main>
+
+    <script src="index.js"></script>
+</body>
